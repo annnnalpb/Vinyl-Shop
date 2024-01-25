@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+  font-family: "filson-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAF8F2;
+  height: 70px;
+  border: solid;
+  border-color: #333333;
+  border-radius: 20px;
+  margin-block: 20px;
+  margin-inline: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  margin: 10px 30px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #9b000b;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333333;
+  font-family: "filson-pro", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+    float: right;
+    background-color: #FAF8F2;
+    color: white;
+    padding: 6px 10px;
+    width: 120px;
+    border: none;
+    margin-top: 1px;
+    margin-right: 8px;
+    font-family: "filson-pro", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    border-bottom: #333333 solid 3px;
+    transition: 0.3s;
+}
+
+.searchbar::placeholder {
+    color: #333333;
+    font-family: "filson-pro", sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    /* transition: 0.2s; */
+}
+
+.searchbar:focus {
+    width: 200px;
+    font-family: "filson-pro", sans-serif;
+    color: #333333;
+    font-size: 1em;
+    font-weight: normal;
+    transition: 0.3s;
+    /* Stops the input box from inheriting the styling from the inputs on the request form */
+    border-bottom: #333333 solid 3px;
+    outline: none;
+}
+
+.btn-search {
+    cursor: pointer;
+    color: #333333;
+    text-decoration: none !important;
+    font-family: "filson-pro", sans-serif;
+    font-size: 1.5em;
+    padding-top: 5px;
+    margin-right: 40px;
+}
