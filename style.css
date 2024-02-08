@@ -4,18 +4,76 @@ body{
   font-weight: 400;
   font-style: normal;
 }
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAF8F2;
+  height: 70px;
+  border: 3px solid;
+  border-color: #333333;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #FAF8F2;
   height: 70px;
-  border: solid;
+  border: 3px solid;
   border-color: #333333;
   border-radius: 20px;
-  margin-block: 20px;
-  margin-inline: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
+
+.lesavisdenosclients {
+    text-align: center;
+    margin-top: 50px;
+}
+.avis {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.avis-item {
+    text-align: center;
+    width: 30%;
+    padding: 50px;
+}
+
+.boutiquelondres {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.text {
+    flex: 1;
+    padding-right: 70px;
+    padding-left: -10px;
+    text-align: justify;
+}
+.imageboutique img {
+    border-radius: 20px;
+    border: 3px solid #333333;
+    max-width: 80%;
+    margin: 2rem;
+}
+
 
 .links {
   display: flex;
@@ -36,6 +94,7 @@ body{
   width: 50px;
   height: 50px;
   object-fit: cover;
+  margin: 20px;
 }
 
 {
@@ -71,6 +130,25 @@ body{
     transition: 0.3s;
 }
 
+.containermap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.textmap {
+    flex: 1;
+    padding-left: 70px;
+    padding-right: -10px;
+    text-align: justify;
+}
+.map {
+    border-radius: 20px;
+    border: 3px solid #333333;
+    max-width: 80%;
+    margin: 3rem;
+}
+
 .searchbar::placeholder {
     color: #333333;
     font-family: "filson-pro", sans-serif;
@@ -100,3 +178,157 @@ body{
     padding-top: 5px;
     margin-right: 40px;
 }
+
+{
+  margin: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: flex-end;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/banner.png');
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+  height: 300px;
+  padding: 100px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.box_new {
+  background-color: #FAF8F2;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  gap: 1rem;
+
+}
+
+h1
+{
+  font-family: "filson-pro", sans-serif;;
+  font-size: 40px;
+  color: #333333;
+  font-weight: bold;
+  margin: 0px;
+}
+
+h2
+{
+  font-family: "filson-pro", sans-serif;;
+  font-size: 25px;
+  color: #9B000B;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.primary_button {
+  background-color: #FAF8F2;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  align-self: center;
+  font-family: "filson-pro", sans-serif;;
+  font-size: 15px;
+  border: 3px solid;
+}
+
+.primary_button:hover{
+  background-color: #9B000B;
+  color: #FAF8F2;
+  border-color: #9B000B;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  user-select: none;
+}
+
+/*===== CARD =====*/
+
+.card {
+  position: relative;
+  padding: 1rem;
+  width: 350px;
+  height: 450px;
+  border-radius: 0.9rem;
+  background-color: var(--red-card);
+  color: var(--text);
+  cursor: pointer;
+  border : 3px solid;
+  margin: 3rem;
+}
+
+.card-blue {
+  background: var(--blue-card);
+}
+
+.product-image {
+  transform: translate(0, -1.5rem);
+  transition: transform 500ms ease-in-out;
+  filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+.product-info {
+  text-align: center;
+}
+
+.card:hover .product-image {
+  transform: translate(-1.5rem, -7rem) rotate(-20deg);
+}
+
+.product-info h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.product-info p {
+  margin: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.8rem;
+
+}
+.buy-btn {
+  background-color: #FAF8F2;
+  padding: 0.6rem 3.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 300ms ease;
+  border : 3px solid;
+  border-radius: 5px;
+}
+.buy-btn:hover {
+  background-color: #9B000B;
+  border-color: #9B000B;
+  color: #FFFFFF;
+
+
+
